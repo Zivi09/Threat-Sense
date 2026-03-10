@@ -22,7 +22,7 @@ app.register_blueprint(auth_bp)
 @app.route('/')
 def serve_dashboard():
     """
-    Serves the main entry point for the ThreatSense interface[cite: 57].
+    Serves the main entry point for the ThreatSense interface.
     """
     return send_from_directory(app.static_folder, 'index.html')
 
@@ -32,5 +32,6 @@ def serve_pages(path):
     return send_from_directory(os.path.join(app.static_folder, 'pages'), path)
 
 if __name__ == "__main__":
-    # Running the Flask server to display threat insights and system health[cite: 48, 86].
+    # Running the Flask server to display threat insights and system health.
+
     app.run(debug=True, port=5000)
