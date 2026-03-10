@@ -217,7 +217,7 @@
         };
 
         try {
-            const res = await fetch('http://127.0.0.1:5000/register', {
+            const res = await fetch('https://threat-sense-ukel.onrender.com/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(userData)
@@ -238,7 +238,7 @@
 } else {
     // Login
     try {
-        const res = await fetch('http://127.0.0.1:5000/login', {
+        const res = await fetch('https://threat-sense-ukel.onrender.com//login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({username: user, password: pass})
@@ -280,4 +280,6 @@
 
 
 </body>
+
 </html>
+

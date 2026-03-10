@@ -271,7 +271,7 @@ window.addEventListener('resize', () => { resizeCanvas(); initStars(); });
 // BACKEND API INTEGRATION (Flask)
 // ===============================
 
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = "https://threat-sense-ukel.onrender.com/";
 
 // 🔹 Get All Threats From Backend
 async function fetchThreats() {
@@ -406,4 +406,5 @@ window.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname.includes("dashboard.html")) {
         fetchThreats();
     }
+
 });
